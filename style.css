@@ -1,12 +1,11 @@
 body
 {
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
     background: rgb(41, 41, 41);;
     color: white;
     font-family: "Nata Sans", sans-serif;
 }
-header
+.header .container
 {
     background: rgb(70, 70, 70);
     display: flex;
@@ -14,107 +13,107 @@ header
     height: 100px;
 }
 
-header img
+.header__logo
 {
+    padding: 10px 0 0 0 ;
     height: 80%;
     width: auto;
 }
-header li
+.header li
 {
-    font-size: 22px;
     list-style: none;
-    margin-right: 20px;
+    margin: 0 10px 0 0;
 }
-header a
+.header__nav-button
 {
     text-transform: uppercase;
     text-decoration: none;
     color: white;
+    font-size: 22px;
 }
-header a:hover
+.separator::before
 {
-    text-decoration: underline;
-
+    content: "| ";
 }
-header ul
+.header__nav-button:hover
+{
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.2s;
+}
+.header__nav
 {
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 .container
 {
     padding: 0% 10%;
 }
-.news_card
+.news__card
 {
     border-radius: 5px;
     background: rgb(70, 70, 70);
-    padding: 20px 20px 10px 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 20px 20px 30px 20px;
+    margin: 20px 0px;
 }
-.news_title
+.news__card-title
 {
     font-size: 32px;
 }
-.news_text
+.news__card-text
 {
     font-size: 18px;
+    margin: 0px 0px 30px 0px;
 }
-.news_datetime
+.news__card-datetime
 {
     color: rgba(255, 255, 255, 0.7);
 }
-.news_body img
+.news__card-img
 {
     width: 100%;
     height: auto;
 }
-.news_body 
+.news__card-body 
 {
-    padding-top: 10px;
+    margin: 10px 0 0 0;
 }
 
-.news_more
+.news__card-more
 {
-    margin-top: 20px;
-    padding: 10px 0;
+    margin: 20px 0px;
+    padding: 10px 10px;
     text-align: center;
-    width: 20%;
     border: 1px solid white;
     border-radius: 5px;
     color: white;
     font-size: 20px;
+    text-decoration: none;
 }
-.news_more:hover
+.news__card-more:hover
 {
     background: white;
     color:rgb(70, 70, 70);
     cursor: pointer;
     transition: 0.2s;
 }
-footer
+.footer
 {
     background: rgb(31, 31, 31);
 }
-.footer_nav
+.footer__nav
 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.footer_column p
-{
-    margin: 0 0 5px;
-}
-.footer_column a
+.footer__nav-link
 {
     text-decoration: none;
     color:rgba(255, 255, 255, 0.7);
 }
-.footer_column a:hover
+.footer__nav-link:hover
 {
     color: white;
     transition: 0.2s;
@@ -122,7 +121,7 @@ footer
 .copyright
 {
 
-    padding-bottom: 10px;
+    padding: 0 0 10px 0;
     margin: 30px 0px 0px;
     text-align: center;
     color:rgb(70, 70, 70);

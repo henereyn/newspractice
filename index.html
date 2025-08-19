@@ -4,174 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap" rel="stylesheet">
     <title>Новости</title>
 </head>
 <body>
-    <header class="container">
-        <a href="#">
-            <img src="img/world-news (1).png" alt="Логотип">
+    <header class="header">
+        <div class="container">
+            <a href="#">
+            <img src="img/world-news (1).png" alt="Логотип" class="header__logo">
         </a>
-        <ul>
+        <ul class="header__nav">
             <li>
-                <a href="#">Главная</a>
+                <a href="#" class="header__nav-button">Главная</a>
             </li>
             <li>
-                |
+               <a href="#" class="header__nav-button separator">О компании</a> 
             </li>
             <li>
-               <a href="#">О компании</a> 
-            </li>
-            <li>
-                |
-            </li>
-            <li>
-                <a href="">Обратная связь</a>
+                <a href="#" class="header__nav-button separator">Обратная связь</a>
             </li>
         </ul>
-    </header>
-    <main class="container">
-        <h1 style="font-weight: 800;font-size: 36px; text-decoration: underline;">Главная</h1>
-        <div class="news_card">
-            <h1 class="news_title">Telo представила MT1 — электрический мини-пикап с «возможностями Toyota Tacoma при габаритах Mini Cooper»</h1>
-            <small class="news_datetime">01.01.2025 12:00</small>
-            <div class="news_body">
-                <img src="img/news1.jpeg" alt="Картинка новости">
-                <p class="news_text">
+        </div>
+    </header>   
+    <main class="news">
+        <div class="container">
+            <h1 class="news__title">Главная</h1>
+        <div class="news__card">
+            <h1 class="news__card-title">Telo представила MT1 — электрический мини-пикап с «возможностями Toyota Tacoma при габаритах Mini Cooper»</h1>
+            <small class="news__card-datetime">01.01.2025 12:00</small>
+            <div class="news__card-body">
+                <img src="img/news1.jpeg" alt="Картинка новости" class="news__card-img">
+                <p class="news__card-text">
                     Американская компания Telo представила электрический мини-пикап. По габаритам он сопоставим с Mini Cooper, но вместимость, по заявлениям производителя, как у полноразмерного пикапа Toyota Tacoma. Базовую 300-сильную версию можно предзаказать за 41 тыс. долларов.
                 </p>
-                <p class="news_more">Читать далее</p>
+                <a class="news__card-more" href="#">Читать далее</a>
             </div> 
         </div>
-        <div class="news_card">
-            <h2 class="news_title">Уничтожение Америки отменяется</h2>
-            <small class="news_datetime">10.07.2025 11:30</small>
-            <div class="news_body">
-                <img src="img/news2.jpeg" alt="Картинка новости">
-                <p class="news_text">
+        <div class="news__card">
+            <h2 class="news__card-title">Уничтожение Америки отменяется</h2>
+            <small class="news__card-datetime">10.07.2025 11:30</small>
+            <div class="news__card-body">
+                <img src="img/news2.jpeg" alt="Картинка новости" class="news__card-img">
+                <p class="news__card-text">
                     У многих моих знакомых, обычных русских обывателей, сложилось неверное представление о характеристиках современного оружия. Они серьёзно преувеличивают его убойную силу. Виноваты в этом игроделы с киношниками, взрывающие целые планеты ради ярких образов, авторы художественных книжек в жанре «постапокалипсиса» и школьные учителя физики, не научившие соизмерять последствия и силу воздействия. Это приводит к искажению реальной картины мира, поощряя шапкозакидательские настроения.
 
 Например, на государственном телеканале «Россия-1» телеведущий Владимир Соловьёв спросил у зрителей: «На сколько процентов поверит Трамп, если скажем, что мы сотрём к чёртовой матери Америку? На сколько процентов поверит Трамп, когда поймёт, что два „Посейдона“, сработавших с разных сторон Североамериканского континента, приведут к образованию радиоактивного цунами, которое создаст навеки пролив имени товарища Сталина?»
 
 Заявленная угроза уничтожения Америки подобным образом абсолютно несостоятельна. Попробуем разобраться, учитывая, что физика подводного ядерного взрыва хорошо изучена.
                 </p>
-                <p class="news_more">Читать далее</p>
+                <a class="news__card-more" href="#">Читать далее</a>
             </div> 
         </div>
-        <div class="news_card">
-            <h2 class="news_title">Как ИИ меняет философию: от рефлексии к мышлению через prompt</h2>
-            <small class="news_datetime">23.06.2025 18:00</small>
-            <div class="news_body">
-                <img src="img/news3.png" alt="Картинка новости">
-                <p class="news_text">
+        <div class="news__card">
+            <h2 class="news__card-title">Как ИИ меняет философию: от рефлексии к мышлению через prompt</h2>
+            <small class="news__card-datetime">23.06.2025 18:00</small>
+            <div class="news__card-body">
+                <img src="img/news3.png" alt="Картинка новости" class="news__card-img">
+                <p class="news__card-text">
                     Философия всегда была искусством размышления но её инструменты оттачивались веками. Выделим три самых известных метода: диалектика, логика и понятийный анализ. Диалектика Гегеля строила мосты между противоречиями, логика Аристотеля задавала правила вывода, а аналитическая философия XX века разлагала понятия на атомарные составляющие (из-за чего наше время потерялось в пост-смыслах).
                 </p>
-                <p class="news_more">Читать далее</p>
+                <a class="news__card-more" href="#">Читать далее</a>
             </div> 
         </div>
-        <div class="news_card">
-            <h2 class="news_title">«Уэбб», возможно, обнаружил первую чёрную дыру, образовавшуюся в результате прямого коллапса</h2>
-            <small class="news_datetime">23.06.2025 18:00</small>
-            <div class="news_body">
-                <img src="img/news4.jpg" alt="Картинка новости">
-                <p class="news_text">
+        <div class="news__card">
+            <h2 class="news__card-title">«Уэбб», возможно, обнаружил первую чёрную дыру, образовавшуюся в результате прямого коллапса</h2>
+            <small class="news__card-datetime">23.06.2025 18:00</small>
+            <div class="news__card-body">
+                <img src="img/news4.jpg" alt="Картинка новости" class="news__card-img">
+                <p class="news__card-text">
                     Астрофизики не знают, существуют ли чёрные дыры прямого коллапса. Их существование – это гипотеза, которую выдвинули, чтобы объяснить, откуда во Вселенной на таком раннем этапе могли появиться сверхмассивные чёрные дыры (СМЧД). Им не требуется ни звёздный прародитель, ни иерархическое слияние. Вместо этого они коллапсируют напрямую из нестабильного газового облака, прямо как звёзды.
 
 Недавно астрономы, работающие с изображениями, полученными в ходе исследования COSMOS-Web — обзора «Уэбба», наблюдающего за более чем миллионом галактик в космическом времени, — обнаружили нечто странное. Они увидели двуядерную галактику, вероятно, образовавшуюся в результате столкновения двух галактик. Они прозвали её галактикой Бесконечность, потому что она напоминает символ бесконечности
                 </p>
-                <p class="news_more">Читать далее</p>
+                <a class="news__card-more" href="#">Читать далее</a>
             </div> 
         </div>
-        <div class="news_card">
-            <h2 class="news_title">Прорыв в лечении Альцгеймера: литий восстановил потерю памяти у мышей</h2>
-            <small class="news_datetime">23.06.2025 18:00</small>
-            <div class="news_body">
-                <img src="img/news5.jpg" alt="Картинка новости">
-                <p class="news_text">
+        <div class="news__card">
+            <h2 class="news__card-title">Прорыв в лечении Альцгеймера: литий восстановил потерю памяти у мышей</h2>
+            <small class="news__card-datetime">23.06.2025 18:00</small>
+            <div class="news__card-body">
+                <img src="img/news5.jpg" alt="Картинка новости" class="news__card-img">
+                <p class="news__card-text">
                     Возможно, у нас появилась новая надежда в борьбе с болезнью Альцгеймера. Исследователи обнаружили, что уровень лития в мозге тесно связан с этим заболеванием, а литиевые добавки могут обратить вспять потерю памяти, подобную болезни Альцгеймера, у мышей.
 
 Команда исследователей из Гарвардской медицинской школы хотела изучить ранее установленную связь между воздействием на организм металлов и риском развития деменции.
 
 На сотнях образцов мозговой ткани и крови, взятых у разных групп,- людей с прогрессирующей болезнью Альцгеймера, лёгкими когнитивными нарушениями на ранних стадиях и вообще без когнитивных проблем,- команда провела тесты с десятками различных металлов.
                 </p>
-                <p class="news_more">Читать далее</p>
+                <a class="news__card-more" href="#">Читать далее</a>
             </div> 
         </div>
-        <div class="news_card">
-            <h2 class="news_title">GPT-5 раскритиковали за неудачный запуск</h2>
-            <small class="news_datetime">23.06.2025 18:00</small>
-            <div class="news_body">
-                <img src="img/news6.jpg" alt="Картинка новости">
-                <p class="news_text">
+        <div class="news__card">
+            <h2 class="news__card-title">GPT-5 раскритиковали за неудачный запуск</h2>
+            <small class="news__card-datetime">23.06.2025 18:00</small>
+            <div class="news__card-body">
+                <img src="img/news6.jpg" alt="Картинка новости" class="news__card-img">
+                <p class="news__card-text">
                     Вчера OpenAI выпустила GPT-5 — свою самую мощную и передовую модель. Но несмотря на впечатляющие результаты в бенчмарках, сам запуск проходит с серьезными проблемами. При написании этой новости я основывался на тексте известного инсайдера Тибора Блахо, данных из некоторых других X-аккаунтов и личном опыте.
-                <p class="news_more">Читать далее</p>
+                </p>
+                <a class="news__card-more" href="#">Читать далее</a>
             </div> 
         </div>
-        <div class="news_card">
-            <h2 class="news_title">Meta приобретает AI-стартап WaveForms для усиления голосовых технологий</h2>
-            <small class="news_datetime">23.06.2025 18:00</small>
-            <div class="news_body">
-                <img src="img/news7.png" alt="Картинка новости">
-                <p class="news_text">
+        <div class="news__card">
+            <h2 class="news__card-title">Meta приобретает AI-стартап WaveForms для усиления голосовых технологий</h2>
+            <small class="news__card-datetime">23.06.2025 18:00</small>
+            <div class="news__card-body">
+                <img src="img/news7.png" alt="Картинка новости" class="news__card-img">
+                <p class="news__card-text">
                     Meta завершила поглощение стартапа WaveForms, специализирующегося на технологиях искусственного интеллекта в области аудио, сообщает издание The Information. Финансовые детали сделки не раскрываются.
                 </p>
-                <p class="news_more">Читать далее</p>
+                <a class="news__card-more" href="#">Читать далее</a>
             </div> 
         </div>
-        <div class="news_card">
-            <h2 class="news_title">Илон Маск анонсировал интеграцию рекламы в ответы Grok</h2>
-            <small class="news_datetime">23.06.2025 18:00</small>
-            <div class="news_body">
-                <img src="img/news8.jpg" alt="Картинка новости">
-                <p class="news_text">
+        <div class="news__card">
+            <h2 class="news__card-title">Илон Маск анонсировал интеграцию рекламы в ответы Grok</h2>
+            <small class="news__card-datetime">23.06.2025 18:00</small>
+            <div class="news__card-body">
+                <img src="img/news8.jpg" alt="Картинка новости" class="news__card-img">
+                <p class="news__card-text">
                     Социальная сеть X планирует встраивать рекламу в ответы Grok. Об этом сообщил Илон Маск в ходе прямого эфира с рекламодателями в среду, отметив, что новые рекламные форматы помогут укрепить ослабленный рекламный бизнес платформы после ухода бывшего генерального директора Линды Якарино, а также помочь покрыть высокие расходы на вычислительные мощности.
                 </p>
-                <p class="news_more">Читать далее</p>
+                <a class="news__card-more" href="#">Читать далее</a>
             </div> 
         </div>
+        </div>
     </main>
-    <footer>
-        <div class="footer_nav">
-            <div class="footer_column">
-            <h2>Главная</h2>
-                <p>
-                    <a href="">Новости</a>
-                </p>
-                <p>
-                    <a href="">Авторы</a>
-                </p>
-                <p>
-                    <a href="">Компании</a>
-                </p>
+    <footer class="footer">
+        <div class="footer__nav">
+            <div class="footer__nav-column">
+            <h3>Главная</h3>
+                    <a href="" class="footer__nav-link">Новости</a><br>
+                    <a href="" class="footer__nav-link">Авторы</a><br>
+                    <a href="" class="footer__nav-link">Компании</a><br>
         </div>
-        <div class="footer_column">
-            <h2>О компании</h2>
-                <p>
-                    <a href="">Соглашение</a>
-                </p>
-                <p>
-                    <a href="">Для авторов</a>
-                </p>
-                <p>
-                    <a href="">Документы</a>
-                </p>
+        <div class="footer__nav-column">
+            <h3>О компании</h3>
+                    <a href="" class="footer__nav-link">Соглашение</a><br>
+                    <a href="" class="footer__nav-link">Для авторов</a><br>
+                    <a href="" class="footer__nav-link">Документы</a><br>
         </div>
-        <div class="footer_column">
-            <h2>Обратная связь</h2>
-                <p>
-                    <a href="">news@email.com</a>
-                </p>
-                <p>
-                    <a href="">Telegram</a>
-                </p>
-                <p>
-                    <a href="">VK</a>
-                </p>
+        <div class="footer__nav-column">
+            <h3>Обратная связь</h3>
+                    <a href="" class="footer__nav-link">news@email.com</a><br>
+                    <a href="" class="footer__nav-link">Telegram</a><br>
+                    <a href="" class="footer__nav-link">VK</a><br>
         </div>
         </div>
-        <h6 class="copyright">©"newspractice" Чернявский Илья, 2025</h6>
+        <p class="copyright">©"newspractice" Чернявский Илья, 2025</p>
     </footer>
 </body>
 </html>
