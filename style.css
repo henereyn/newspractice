@@ -205,7 +205,11 @@ body
     text-align: center;
     color:rgb(70, 70, 70);
 }
-
+.slider__item-content
+{
+    padding: 0 10%;
+    margin: 0 0 40px 0;
+}
 .slider__item-link
 {
     color:rgba(255, 255, 255, 0.7);
